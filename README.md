@@ -16,7 +16,7 @@ stock_market_preprocessing/
 │
 ├── src/
 │   ├── __init__.py
-│   └── preprocessing.py      # Main preprocessing module
+│   └── stock_data_preprocessor.py     # Main preprocessing module
 │
 ├── tests/
 │   ├── __init__.py
