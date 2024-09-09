@@ -37,7 +37,7 @@ stock_market_preprocessing/
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone ahmadkhan100
 cd stock_market_preprocessing
 ```
 
