@@ -1,4 +1,4 @@
-# src/stock_preprocessor.py
+# src/stock_data_preprocessor.py
 
 import pandas as pd
 import numpy as np
