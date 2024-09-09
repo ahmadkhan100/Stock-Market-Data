@@ -21,7 +21,7 @@ stock_market_preprocessing/
 ├── tests/
 │   ├── __init__.py
 │   └── test_data_preprocessor.py # Unit tests for preprocessing
-│
+├──  config.py                    # managing configuration parameters
 ├── .gitignore                # Specifies intentionally untracked files to ignore
 ├── requirements.txt          # Required Python libraries
 └── main.py                   # Main script to run the preprocessing pipeline
