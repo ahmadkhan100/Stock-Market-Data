@@ -1,0 +1,7 @@
+2023-09-24 14:22:15 - StockDataPreprocessor - INFO - Initializing the data preprocessor.
+2023-09-24 14:22:15 - StockDataPreprocessor - INFO - Loading data.
+2023-09-24 14:22:16 - StockDataPreprocessor - ERROR - Failed to load data: File not found.
+2023-09-24 14:22:20 - StockDataPreprocessor - INFO - Starting data preprocessing.
+2023-09-24 14:22:21 - StockDataPreprocessor - INFO - Handling missing values with forward fill.
+2023-09-24 14:22:22 - StockDataPreprocessor - INFO - Scaling numerical features.
+2023-09-24 14:22:23 - StockDataPreprocessor - INFO - Preprocessing complete. Displaying first few rows of the processed data.
