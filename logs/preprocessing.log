@@ -1,19 +1,54 @@
-2023-08-08 10:15:32,123 - main - INFO - Starting stock market data preprocessing pipeline
-2023-08-08 10:15:32,125 - stock_preprocessor - INFO - Loading data from data/stock_data.csv
-2023-08-08 10:15:32,456 - stock_preprocessor - INFO - Loaded data shape: (1258, 6)
-2023-08-08 10:15:32,458 - stock_preprocessor - INFO - Handling missing values
-2023-08-08 10:15:32,789 - stock_preprocessor - INFO - Using KNN imputation for remaining missing values
-2023-08-08 10:15:33,123 - stock_preprocessor - INFO - Handling outliers
-2023-08-08 10:15:33,456 - stock_preprocessor - INFO - Calculating returns
-2023-08-08 10:15:33,789 - stock_preprocessor - INFO - Adding technical indicators
-2023-08-08 10:15:34,123 - stock_preprocessor - INFO - Adding fundamental indicators
-2023-08-08 10:15:34,456 - stock_preprocessor - WARNING - Placeholder fundamental indicators used. Replace with actual data for production use.
-2023-08-08 10:15:34,789 - stock_preprocessor - INFO - Performing feature engineering
-2023-08-08 10:15:35,123 - stock_preprocessor - INFO - Normalizing features
-2023-08-08 10:15:35,456 - stock_preprocessor - INFO - Creating sequences for time series forecasting
-2023-08-08 10:15:35,789 - stock_preprocessor - INFO - Preprocessing completed successfully
-2023-08-08 10:15:36,123 - stock_preprocessor - INFO - Saving preprocessed data to data/preprocessed_stock_data.csv
-2023-08-08 10:15:36,456 - stock_preprocessor - INFO - Preprocessed data saved successfully
-2023-08-08 10:15:36,789 - main - INFO - Preprocessed data shape: (1248, 10, 25)
-2023-08-08 10:15:36,790 - main - INFO - Target shape: (1248,)
-2023-08-08 10:15:36,791 - main - INFO - Stock market data preprocessing pipeline completed successfullyVersion 2 of 2
+2023-09-08 23:55:55,588 - StockPreprocessor - INFO - Loading data from /mnt/data/simulated_stock_data_last_year (2).csv
+2023-09-08 23:55:55,595 - StockPreprocessor - INFO - Loaded data shape: (391, 5)
+2023-09-08 23:55:55,596 - StockPreprocessor - INFO - Handling missing values
+2023-09-08 23:55:55,598 - StockPreprocessor - INFO - Handling outliers
+2023-09-08 23:55:55,613 - StockPreprocessor - INFO - Calculating returns
+2023-09-08 23:55:55,617 - StockPreprocessor - INFO - Adding technical indicators
+2023-09-08 23:55:55,625 - StockPreprocessor - INFO - Adding fundamental indicators
+2023-09-08 23:55:55,627 - StockPreprocessor - INFO - Performing feature engineering
+2023-09-08 23:55:55,631 - StockPreprocessor - INFO - Normalizing features
+2023-09-08 23:55:55,686 - StockPreprocessor - INFO - Creating sequences for time series forecasting
+2023-09-08 23:55:55,866 - StockPreprocessor - INFO - Saving preprocessed data to /mnt/data/preprocessed_stock_data.csv
+2023-09-08 23:55:55,881 - StockPreprocessor - INFO - Preprocessed data saved successfully
+2023-09-08 23:55:55,881 - root - INFO - Preprocessed data shape: (311, 60, 23)
+2023-09-08 23:55:55,882 - root - INFO - Target shape: (311,)
+2023-09-08 23:55:55,891 - root - INFO - Preprocessed dataframe head: 
+                         Open      High       Low     Close    Volume  \
+Date                                                                    
+2023-09-08 09:50:00  0.979652  0.950073  0.416392  0.367182  0.645161   
+2023-09-08 09:51:00  0.799137  0.808352  0.396522  0.377618  0.421580   
+2023-09-08 09:52:00  0.459471  0.577118  0.483309  0.559319  0.612903   
+2023-09-08 09:53:00  0.780398  0.777519  0.716636  0.667770  0.141268   
+2023-09-08 09:54:00  0.114247  0.277708  0.140279  0.283850  0.230256   
+
+                     Daily_Return  Cumulative_Return       SMA       EMA  \
+Date                                                                       
+2023-09-08 09:50:00      0.405377           0.367182  0.788375  0.824908   
+2023-09-08 09:51:00      0.357447           0.377618  0.713075  0.764209   
+2023-09-08 09:52:00      0.447740           0.559319  0.696009  0.757373   
+2023-09-08 09:53:00      0.402485           0.667770  0.730753  0.779887   
+2023-09-08 09:54:00      0.184398           0.283850  0.733614  0.698663   
+
+                          RSI  ...    BB_Std  BB_Upper  BB_Lower  P/E_Ratio  \
+Date                           ...                                            
+2023-09-08 09:50:00  0.280249  ...  0.426532  0.716326  0.597434   0.909435   
+2023-09-08 09:51:00  0.128324  ...  0.366119  0.621504  0.578091   0.706635   
+2023-09-08 09:52:00  0.120380  ...  0.357812  0.603330  0.570563   0.893974   
+2023-09-08 09:53:00  0.226322  ...  0.339938  0.618904  0.606202   0.523553   
+2023-09-08 09:54:00  0.185875  ...  0.331143  0.615676  0.613413   0.649186   
+
+                     P/B_Ratio  Volatility  Price_Momentum  Volume_Momentum  \
+Date                                                                          
+2023-09-08 09:50:00   0.664617    0.309649        0.141539         0.521301   
+2023-09-08 09:51:00   0.969995    0.284490        0.162493         0.048452   
+2023-09-08 09:52:00   0.948353    0.278845        0.249815         0.242997   
+2023-09-08 09:53:00   0.536389    0.258937        0.259664         0.023569   
+2023-09-08 09:54:00   0.530458    0.283666        0.358134         0.072488   
+
+                     Day_of_Week  Is_Month_End  
+Date                                            
+2023-09-08 09:50:00          0.0           0.0  
+2023-09-08 09:51:00          0.0           0.0  
+2023-09-08 09:52:00          0.0           0.0  
+2023-09-08 09:53:00          0.0           0.0  
+2023-09-08 09:54:00          0.0           0.0  
